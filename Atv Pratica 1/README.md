@@ -1,0 +1,1 @@
+Repositório das atividades práticas de Circuito Digital - Ciência da Computação
