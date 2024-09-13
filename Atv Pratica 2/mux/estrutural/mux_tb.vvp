@@ -1,0 +1,82 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "c:\iverilog\lib\ivl\system.vpi";
+:vpi_module "c:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "c:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "c:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "c:\iverilog\lib\ivl\va_math.vpi";
+S_0000016ce9445270 .scope module, "mux_tb" "mux_tb" 2 4;
+ .timescale -9 -9;
+v0000016ce9446670_0 .var "d", 3 0;
+v0000016ce9446d50_0 .var "s", 1 0;
+v0000016ce94471b0_0 .net "y", 0 0, L_0000016ce92ccc90;  1 drivers
+S_0000016ce92cc8a0 .scope module, "uut" "mux_gate" 2 9, 3 1 0, S_0000016ce9445270;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 4 "d";
+    .port_info 1 /INPUT 2 "s";
+    .port_info 2 /OUTPUT 1 "y";
+L_0000016ce92c71d0 .functor NOT 1, L_0000016ce9446df0, C4<0>, C4<0>, C4<0>;
+L_0000016ce92cbf60 .functor NOT 1, L_0000016ce9447250, C4<0>, C4<0>, C4<0>;
+L_0000016ce92c6d40 .functor AND 1, L_0000016ce94472f0, L_0000016ce92c71d0, L_0000016ce92cbf60, C4<1>;
+L_0000016ce92ccb40 .functor AND 1, L_0000016ce949f8e0, L_0000016ce92cbf60, L_0000016ce949f5c0, C4<1>;
+L_0000016ce92ccbb0 .functor AND 1, L_0000016ce949fe80, L_0000016ce949fb60, L_0000016ce92c71d0, C4<1>;
+L_0000016ce92ccc20 .functor AND 1, L_0000016ce949f520, L_0000016ce94a06a0, L_0000016ce949eda0, C4<1>;
+L_0000016ce92ccc90 .functor OR 1, L_0000016ce92c6d40, L_0000016ce92ccb40, L_0000016ce92ccbb0, L_0000016ce92ccc20;
+v0000016ce9446b70_0 .net *"_ivl_1", 0 0, L_0000016ce9446df0;  1 drivers
+v0000016ce9446f30_0 .net *"_ivl_11", 0 0, L_0000016ce949fe80;  1 drivers
+v0000016ce9446c10_0 .net *"_ivl_13", 0 0, L_0000016ce949fb60;  1 drivers
+v0000016ce9447430_0 .net *"_ivl_15", 0 0, L_0000016ce949f520;  1 drivers
+v0000016ce9446a30_0 .net *"_ivl_17", 0 0, L_0000016ce94a06a0;  1 drivers
+v0000016ce94467b0_0 .net *"_ivl_19", 0 0, L_0000016ce949eda0;  1 drivers
+v0000016ce9446710_0 .net *"_ivl_3", 0 0, L_0000016ce9447250;  1 drivers
+v0000016ce9446e90_0 .net *"_ivl_5", 0 0, L_0000016ce94472f0;  1 drivers
+v0000016ce94468f0_0 .net *"_ivl_7", 0 0, L_0000016ce949f8e0;  1 drivers
+v0000016ce9447070_0 .net *"_ivl_9", 0 0, L_0000016ce949f5c0;  1 drivers
+v0000016ce9447110_0 .net "d", 3 0, v0000016ce9446670_0;  1 drivers
+v0000016ce9447390_0 .net "d0", 0 0, L_0000016ce92c6d40;  1 drivers
+v0000016ce9446850_0 .net "d1", 0 0, L_0000016ce92ccb40;  1 drivers
+v0000016ce9446990_0 .net "d2", 0 0, L_0000016ce92ccbb0;  1 drivers
+v0000016ce9446fd0_0 .net "d3", 0 0, L_0000016ce92ccc20;  1 drivers
+v0000016ce9446ad0_0 .net "ns0", 0 0, L_0000016ce92c71d0;  1 drivers
+v0000016ce9446cb0_0 .net "ns1", 0 0, L_0000016ce92cbf60;  1 drivers
+v0000016ce94474d0_0 .net "s", 1 0, v0000016ce9446d50_0;  1 drivers
+v0000016ce9447570_0 .net "y", 0 0, L_0000016ce92ccc90;  alias, 1 drivers
+L_0000016ce9446df0 .part v0000016ce9446d50_0, 0, 1;
+L_0000016ce9447250 .part v0000016ce9446d50_0, 1, 1;
+L_0000016ce94472f0 .part v0000016ce9446670_0, 0, 1;
+L_0000016ce949f8e0 .part v0000016ce9446670_0, 1, 1;
+L_0000016ce949f5c0 .part v0000016ce9446d50_0, 0, 1;
+L_0000016ce949fe80 .part v0000016ce9446670_0, 2, 1;
+L_0000016ce949fb60 .part v0000016ce9446d50_0, 1, 1;
+L_0000016ce949f520 .part v0000016ce9446670_0, 3, 1;
+L_0000016ce94a06a0 .part v0000016ce9446d50_0, 0, 1;
+L_0000016ce949eda0 .part v0000016ce9446d50_0, 1, 1;
+    .scope S_0000016ce9445270;
+T_0 ;
+    %vpi_call 2 12 "$dumpfile", "mux_tb.vcd" {0 0 0};
+    %vpi_call 2 13 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000016ce9445270 {0 0 0};
+    %pushi/vec4 12, 0, 4;
+    %store/vec4 v0000016ce9446670_0, 0, 4;
+    %pushi/vec4 0, 0, 2;
+    %store/vec4 v0000016ce9446d50_0, 0, 2;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 2;
+    %store/vec4 v0000016ce9446d50_0, 0, 2;
+    %delay 10, 0;
+    %pushi/vec4 2, 0, 2;
+    %store/vec4 v0000016ce9446d50_0, 0, 2;
+    %delay 10, 0;
+    %pushi/vec4 3, 0, 2;
+    %store/vec4 v0000016ce9446d50_0, 0, 2;
+    %delay 10, 0;
+    %vpi_call 2 21 "$display", "Teste completo" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "mux_tb.v";
+    "./mux.v";
