@@ -1,0 +1,129 @@
+$date
+	Fri Sep 27 09:37:51 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module adder_8bits_tb $end
+$var wire 9 ! s [8:0] $end
+$var reg 8 " a [7:0] $end
+$var reg 8 # b [7:0] $end
+$scope module uut $end
+$var wire 8 $ a [7:0] $end
+$var wire 8 % b [7:0] $end
+$var wire 9 & s [8:0] $end
+$var wire 7 ' c [6:0] $end
+$scope module u $end
+$var wire 1 ( a $end
+$var wire 1 ) b $end
+$var wire 1 * cIn $end
+$var wire 1 + cOut $end
+$var wire 1 , s $end
+$upscope $end
+$scope module u1 $end
+$var wire 1 - a $end
+$var wire 1 . b $end
+$var wire 1 / c $end
+$var wire 1 0 s $end
+$upscope $end
+$scope module u2 $end
+$var wire 1 1 a $end
+$var wire 1 2 b $end
+$var wire 1 3 cIn $end
+$var wire 1 4 cOut $end
+$var wire 1 5 s $end
+$upscope $end
+$scope module u3 $end
+$var wire 1 6 a $end
+$var wire 1 7 b $end
+$var wire 1 8 cIn $end
+$var wire 1 9 cOut $end
+$var wire 1 : s $end
+$upscope $end
+$scope module u4 $end
+$var wire 1 ; a $end
+$var wire 1 < b $end
+$var wire 1 = cIn $end
+$var wire 1 > cOut $end
+$var wire 1 ? s $end
+$upscope $end
+$scope module u5 $end
+$var wire 1 @ a $end
+$var wire 1 A b $end
+$var wire 1 B cIn $end
+$var wire 1 C cOut $end
+$var wire 1 D s $end
+$upscope $end
+$scope module u6 $end
+$var wire 1 E a $end
+$var wire 1 F b $end
+$var wire 1 G cIn $end
+$var wire 1 H cOut $end
+$var wire 1 I s $end
+$upscope $end
+$scope module u7 $end
+$var wire 1 J a $end
+$var wire 1 K b $end
+$var wire 1 L cIn $end
+$var wire 1 M cOut $end
+$var wire 1 N s $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+1N
+1M
+1L
+1K
+1J
+1I
+1H
+1G
+1F
+1E
+0D
+1C
+1B
+0A
+1@
+0?
+1>
+1=
+0<
+1;
+0:
+19
+08
+17
+16
+15
+04
+03
+02
+11
+10
+0/
+0.
+1-
+0,
+1+
+1*
+0)
+1(
+b1111100 '
+b101100011 &
+b1100100 %
+b11111111 $
+b1100100 #
+b11111111 "
+b101100011 !
+$end
+#10
