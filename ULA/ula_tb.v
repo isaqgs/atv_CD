@@ -8,15 +8,16 @@ module ula_tb;
     reg [7:0] a;
     reg [7:0] b;
     wire [7:0] s;
-    ula uut(clk, a, b, op, s);
+    wire flag;
+    ula uut(clk, a, b, op, s, flag);
 
     initial begin
         $dumpfile ("ula.vcd");
         $dumpvars (0, ula_tb);
 
-        op = 3'b000;
-        a = 8'b10101010;
-        b = 8'b11111111; #100;
+        op = 3'b001;
+        a = 8'b00000000;
+        b = 8'b00000100; #100;
 
         $finish;
     end
