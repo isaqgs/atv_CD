@@ -3,21 +3,28 @@
 
 module ula_tb;
 
-    reg clk;
+    reg clk, pr, clr;
     reg [2:0] op;
-    reg [7:0] a;
-    reg [7:0] b;
+    reg [7:0] a, b;
     wire [7:0] s;
     wire flag;
-    ula uut(clk, a, b, op, s, flag);
+    ula uut(clk, a, b, op, pr, clr, s, flag);
 
     initial begin
         $dumpfile ("ula.vcd");
         $dumpvars (0, ula_tb);
 
-        op = 3'b001;
-        a = 8'b00000000;
-        b = 8'b00000100; #100;
+        pr = 0; clr = 0; 
+        a = 8'b00101011;
+        b = 8'b01110001; 
+        op = 3'b000; #50;
+        op = 3'b001; #50;
+        op = 3'b010; #50;
+        op = 3'b011; #50;
+        op = 3'b100; #50;
+        op = 3'b101; #50;
+        op = 3'b110; #50;
+        op = 3'b111; #50;
 
         $finish;
     end
